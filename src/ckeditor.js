@@ -102,4 +102,11 @@ Editor.builtinPlugins = [
 	Underline
 ];
 
+Editor.defaultConfig = {
+    toolbar: [ 'bold', 'italic', 'underline', 'subscript', 'superscript', '|', 'alignment:left', 'alignment:center', 'alignment:right', '|', 'specialCharacters', 'link', 'bulletedList', 'numberedList', '|', 'removeFormat'],
+
+    // This value must be kept in sync with the language defined in webpack.config.js.
+    language: 'en'
+};
+
 export default Editor;
