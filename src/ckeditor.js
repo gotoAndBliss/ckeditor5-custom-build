@@ -11,7 +11,6 @@ import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor.js';
 import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily.js';
 import FontSize from '@ckeditor/ckeditor5-font/src/fontsize.js';
-import Heading from '@ckeditor/ckeditor5-heading/src/heading.js';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline.js';
 import Image from '@ckeditor/ckeditor5-image/src/image.js';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption.js';
@@ -46,7 +45,6 @@ import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperti
 import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
-import Title from '@ckeditor/ckeditor5-heading/src/title.js';
 import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 
@@ -62,7 +60,6 @@ Editor.builtinPlugins = [
 	FontColor,
 	FontFamily,
 	FontSize,
-	Heading,
 	HorizontalLine,
 	Image,
 	ImageCaption,
@@ -97,16 +94,8 @@ Editor.builtinPlugins = [
 	TableProperties,
 	TableToolbar,
 	TextTransformation,
-	Title,
 	TodoList,
 	Underline
 ];
-
-Editor.defaultConfig = {
-    toolbar: [ 'bold', 'italic', 'underline', 'subscript', 'superscript', '|', 'alignment:left', 'alignment:center', 'alignment:right', '|', 'specialCharacters', 'link', 'bulletedList', 'numberedList', '|', 'removeFormat'],
-
-    // This value must be kept in sync with the language defined in webpack.config.js.
-    language: 'en'
-};
 
 export default Editor;
